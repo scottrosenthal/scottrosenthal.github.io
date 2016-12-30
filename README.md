@@ -1,1 +1,0 @@
-# scottrosenthal.github.io
