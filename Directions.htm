@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<title>Directions to Willow</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/button5.gif', /*url*/'images/button6.gif')">
+
+<h1>Directions to <em>Willow</em></h1>
+
+<p><em>Willow</em> is located in Pasadena, Maryland on Rock Creek. Rock Creek is on the
+south shore of the Patapsco River half-way between the Key Bridge and the Chesapeake Bay. <em>Willow</em>
+is located at:</p>
+
+<blockquote>
+  <dl>
+    <dd>Oak Harbor Marina</dd>
+    <dd>1343 Old Water Oak Point Road</dd>
+    <dd>Pasadena, MD<span lang="en-us"> 21122</span></dd>
+	<dd><span lang="en-us">
+	<a target="_blank" href="https://www.google.com/maps/place/1343+Old+Water+Oak+Point+Rd/@39.1379256,-76.506699,14z/data=!4m2!3m1!1s0x89b7fefa85d77a49:0xfbe47ba2c129d464?hl=en">
+	<img border="0" id="img1" src="images/button4.gif" height="20" width="100" alt="Map" fp-style="fp-btn: Border Bottom 1; fp-transparent: 1" fp-title="Map" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button5.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button4.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button6.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button5.gif')"></a></span></dd>
+  </dl>
+</blockquote>
+
+<p>To get to <em>Willow</em>, follow the appropriate directions:</p>
+<div align="left">
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%" colspan="2">Coming From the South on Rt. 95:</td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"><ol>
+      <li>Take Rt. 95 north to Rt. 100 East (Gibson Island, Glen Burnie).</li>
+      <li>Go 15.4 miles and make a left turn on Magothy Bridge Road (Rt. 607N).</li>
+      <li>Continue with the directions below from Magothy Bridge Road.</li>
+    </ol>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2">Coming From the South on Rt. 97:</td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"><ol>
+      <li>Take Rt. 97 north to Rt. 100 East (Gibson Island, Glen Burnie)</li>
+      <li>Go 7.6 miles and make a left turn on Magothy Bridge Road (Rt. 607N).</li>
+      <li>Continue with the directions below from Magothy Bridge Road.</li>
+    </ol>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2">Coming From the Baltimore Beltway (Rt. 695):</td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"><ol>
+      <li>Take Rt.10 south to Rt. 100 East (Gibson Island, Glen Burnie)</li>
+      <li>Go 3.2 miles and make a left turn on Magothy Bridge Road (Rt. 607N).</li>
+      <li>Continue with the directions below from Magothy Bridge Road.</li>
+    </ol>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2">Directions From Magothy Bridge Road:</td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"><ol>
+      <li>Go 1.1 miles on Magothy Bridge Road and make a right turn onto Ft. Smallwood Road.</li>
+      <li>Go 0.5 miles and turn left on Water Oak Point Road.</li>
+      <li>Go 0.5 miles and turn left on Old Water Oak Point Road.</li>
+      <li>Go 0.4 miles and turn left into the marina driveway (1343 -- watch the speed humps!).</li>
+      <li>Go down the driveway and into the marina.</li>
+      <li>Bear right and follow the driveway towards the water.</li>
+      <li>Park your car wherever you can near the marina office. Be sure not to block the
+        TravelLift.</li>
+    </ol>
+    </td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2"><em>Willow</em> is on B dock at slip 8<span lang="en-us">4</span>:</td>
+  </tr>
+  <tr>
+    <td width="5%"></td>
+    <td width="95%"><ol>
+      <li>From the picnic area at the marina office, walk down the concrete and wood ramp onto the
+        main dock.</li>
+      <li>Walk out to the end of the dock.</li>
+      <li>At the end, turn left and walk towards the end of the dock.</li>
+      <li><em>Willow</em> is in the <span lang="en-us">third slip on the right</span> side of the dock.</li>
+    </ol>
+    </td>
+  </tr>
+</table>
+</div>
+
+<p>See you there!</p>
+
+<p>&nbsp;</p>
+</body>
+</html>
